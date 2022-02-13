@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flex{
+    display: flex; /* Permet de positionner les elements */
+}
+.flex-column{
+    flex-direction: column; /*direction en colone des element*/
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-center-h{
+    justify-content: center;  /*centrer par rapport à l'axe horizontal*/
+}
+.flex-center-v{
+    align-items: center;   /*centrer par rapport à l'axe vertical*/
+}
+
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+    flex: 3;
+}
+.flex-4{
+    flex: 4;
+}
+.flex-5{
+    flex: 5;
+}
+
+.gap-5{
+    gap: 5px; /*espace entre les élément*/
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}
+
+.gap-50{
+    gap: 50px;
+}
+
+
+
+}
+input, select, textarea {
+    outline: none; /*bordure*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.2rem;
+    border: 0.1px solid #ccc;
+    background-color: #efefef;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+margin: 0;
+padding: 0;
+cursor: pointer;
+list-style-type: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+header .header-icon i{
+    color: #ccc;
+}
+
+.text-center{
+    text-align:center ;
+}
+
+i{
+    color: #ccc;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.box{
+    box-shadow: 0px 4px 8px rgb(0 0 0/10%), 0px 12px 18px rgb(0 0 0/10%)
+
+}
+
+.fixed{
+    position: fixed;
+}
+.sticky{
+    position: sticky;
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.profil-picture img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+[class$="-xl"]{
+    width: %;
+    margin: 20px auto;
+}
+
+[class$="-m"]{
+    width: 70%;
+    margin: 20px auto;
+}
+
+.center-element{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.paginate{
+    margin: 20px 0;
+}
+.paginate-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: red;
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+@media screen and (max-width: 900px) {
+    [class$="-xl"]{
+        width: 100%;
+        margin: 20px auto;
+    }
+    [class$="-m"]{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    [class$="-xl"]{
+        width: 100%;
+        margin: 20px auto;
+    }
+    
+    [class$="-m"]{
+        width: 90%;
+    }
+}
+}
